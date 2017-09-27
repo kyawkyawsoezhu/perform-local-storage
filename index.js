@@ -13,7 +13,7 @@ export default function performLocalStorage(action, config = { limit: 15 }) {
 
   const save = (resolve, reject) => {
     try {
-      const oldData = JSON.parse(localStorage.getItem(config.key));
+      const oldData = JSON.parse(localStorage.getItem(config.key)) || [];
       if (oldData.length >= 15) {
         oldData.pop();
       }
