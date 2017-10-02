@@ -2,7 +2,7 @@
   "name": "perform-local-storage",
   "version": "0.0.3",
   "description": "perform action like save or load to browser's localStorage with Promise type",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build-dist": "`npm bin`/babel src -d dist"
   },
