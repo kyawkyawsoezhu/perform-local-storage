@@ -1,6 +1,6 @@
 {
   "name": "perform-local-storage",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "perform action like save or load to browser's localStorage with Promise type",
   "main": "dist/index.js",
   "scripts": {
