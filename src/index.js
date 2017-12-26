@@ -1,4 +1,4 @@
-import { uniqWith, isEqual } from 'lodash';
+import uniqBy from 'lodash.uniq';
 
 export default function performLocalStorage(action, config = { limit: 15 }) {
   const load = (resolve, reject) => {
@@ -19,7 +19,7 @@ export default function performLocalStorage(action, config = { limit: 15 }) {
       }
       oldData.unshift(config.data);
       localStorage.removeItem(config.key);
-      const newData = uniqWith(oldData, isEqual);
+      const newData = uniqBy(oldData, 'id');
       localStorage.setItem(config.key, JSON.stringify(newData));
       resolve({ data: config.data });
     } catch (reason) {

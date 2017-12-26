@@ -24,7 +24,7 @@
   "homepage": "https://github.com/kyawkyawsoezhu/perform-local-storage#readme",
   "dependencies": {
     "jsonwebtoken": "^8.0.1",
-    "lodash": "^4.17.4",
+    "lodash.uniq": "^4.5.0",
     "moment": "^2.18.1"
   },
   "devDependencies": {
